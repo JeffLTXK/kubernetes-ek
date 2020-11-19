@@ -19,9 +19,9 @@
 `kubectl create -f ./kibana/kibana-statefulset.yaml`
 
 ## NGINX
-1.  Create the NGINX configmap
+1.  Create the NGINX configmap:
 `kubectl create configmap confnginx -n kube-logging --from-file=./nginx/.data/nginx.conf`
-2.  Create the NGINX service 
+2.  Create the NGINX service: 
 `kubectl create -f ./nginx/nginx-service.yaml`
-3.  Create the NGINX deployment
-`kubectl create -f ./nginx/nginx-deploy.yaml'
+3.  Create the NGINX deployment:
+`kubectl create -f ./nginx/nginx-deploy.yaml`
